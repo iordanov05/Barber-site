@@ -1,0 +1,4 @@
+https://github.com/yoksel/common-words/
+https://habr.com/ru/company/yandex/blog/276035/
+http://yoksel.github.io/easy-markup/bem-rules/
+https://ru.bem.info/methodology/quick-start/

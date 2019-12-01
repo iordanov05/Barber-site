@@ -9,223 +9,262 @@
   <title>Barber</title>
 
   <link rel="stylesheet" href="css/style.css">
+</head>
 
 <body>
-  <header>
-    <div>
-      <img src="#" alt="Barber logo">
-      <a href="tel:1-800-00-000-0000">1-800-00-000-0000</a>
-      <a href="tel:1-800-00-000-0000">1-800-00-000-0000</a>
-      <a href="#">11301 West Olympic Boulevard
-        New Yourk, USA</a>
-      <p>Mon - Fri
-        9.00 - 18.00
-      </p>
-      <a href="#">search</a>
+  <header class="page-header">
+    <div class="page-header__container">
+      <img class="page-header__logo" src="#" alt="Barber logo">
+      <ul class="page-header__info-list">
+        <li class="page-header__info-item">
+          <a class="page-header__info-link" href="tel:1-800-00-000-0000">1-800-00-000-0000</a>
+          <a class="page-header__info-link" href="tel:1-800-00-000-0000">1-800-00-000-0000</a>
+        </li>
+        <li class="page-header__info-item">
+          <a class="page-header__info-link" href="#">11301 West Olympic Boulevard
+            New York, USA</a>
+        </li>
+        <li class="page-header__info-item">
+          <p class="page-header__info-text">Mon - Fri
+            9.00 - 18.00
+          </p>
+        </li>
+        <li class="page-header__info-item">
+          <a class="page-header__info-link" href="#">search</a>
+        </li>
+      </ul>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">servises</a></li>
-        <li><a href="#">barbers</a></li>
-        <li><a href="#">testimonials</a></li>
-        <li><a href="#">portfolio</a></li>
-        <li><a href="#">prices</a></li>
-        <li><a href="#">contacts</a></li>
+    <nav class="page-header__nav">
+      <ul class="main-menu">
+        <li class="main-menu__item">
+          <a class="main-menu__link main-menu__link--curren" href="#">home</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">about</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">servises</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">barbers</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">testimonials</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">portfolio</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">prices</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">contacts</a>
+        </li>
       </ul>
     </nav>
   </header>
-  <main>
-    <h1>Barbershop</h1>
-    <section>
-      <h2>Promotions</h2>
-      <label>
-        <input type="radio" name="slider-control">Back
+
+  <main class="page-main">
+    <h1 class="page-main__title">Barbershop</h1>
+    <section class="slider">
+      <h2 class="section-title">Promotions</h2>
+      <label class="slider__btn slider__btn--back">
+        <input class="slider__input" type="radio" name="slider-control">Back
       </label>
-      <label>
-        <input type="radio" name="slider-control">Front
+      <label class="slider__btn slider__btn--front">
+        <input class="slider__input" type="radio" name="slider-control">Front
       </label>
-      <ul>
-        <li>
-          <img src="#" alt="Slider-BG">
-          <p><span>welcome to the</span> <span>barbershop</span></p>
-          <a href="#">Make An Appointment</a>
+      <ul class="slider__list">
+        <li class="slider__item">
+          <img class="slider__img" src="#" alt="Slider-BG">
+          <p class="slider__slogan">
+            <span class="slider__text slider__text--white">welcome to the</span>
+            <span class="slider__text slider__text--brown">barbershop</span>
+          </p>
+          <a class="slider__btn slider__btn--rect" href="#">Make An Appointment</a>
         </li>
       </ul>
     </section>
-    <section>
-      <h2>About us</h2>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+    <section class="about">
+      <h2 class="section-title">About us</h2>
+      <p class="about__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
         accusantium doloremque laudantium, totam rem aperiam</p>
-      <ul>
-        <li>
-          <h3>New Yourk’s №1 Barbershop</h3>
-          <p>Sed ut perspiciatis unde omnis iste
+      <ul class="about__list">
+        <li class="about__item">
+          <h3 class="about__title">New Yourk’s №1 Barbershop</h3>
+          <p class="about__text">Sed ut perspiciatis unde omnis iste
             natus error sit voluptatem
             accusantium doloremque laudantium.</p>
         </li>
-        <li>
-          <h3>Profeccionals Barbers</h3>
-          <p>Sed ut perspiciatis unde omnis iste
+        <li class="about__item">
+          <h3 class="about__title">Profeccionals Barbers</h3>
+          <p class="about__text">Sed ut perspiciatis unde omnis iste
             natus error sit voluptatem
             accusantium doloremque laudantium.</p>
         </li>
-        <li>
-          <h3>Branded Products</h3>
-          <p>Sed ut perspiciatis unde omnis iste
+        <li class="about__item">
+          <h3 class="about__title">Branded Products</h3>
+          <p class="about__text">Sed ut perspiciatis unde omnis iste
             natus error sit voluptatem
             accusantium doloremque laudantium.</p>
         </li>
       </ul>
     </section>
-    <section>
-      <h2>Statistics</h2>
-      <ul>
-        <li>
-          <p>2500</p>
-          <p>happy clients</p>
+    <section class="statistics">
+      <h2 class="section-title">Statistics</h2>
+      <ul class="statistics__list">
+        <li class="statistics__item">
+          <p class="statistics__price">2500</p>
+          <p class="statistics__text">happy clients</p>
         </li>
-        <li>
-          <p>300</p>
-          <p>coffee cups</p>
+        <li class="statistics__item">
+          <p class="statistics__price">300</p>
+          <p class="statistics__text">coffee cups</p>
         </li>
-        <li>
-          <p>120</p>
-          <p>barbers</p>
+        <li class="statistics__item">
+          <p class="statistics__price">120</p>
+          <p class="statistics__text">barbers</p>
         </li>
-        <li>
-          <p>30</p>
-          <p>stores</p>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h2>Our Services</h2>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam</p>
-      <ul>
-        <li>
-          <h3>Hair cut</h3>
-          <p>At vero eos et accusamus et iusto odio
-            dignissimos ducimus qui blanditiis praesentium
-            voluptatum deleniti atque corrupti quos</p>
-        </li>
-        <li>
-          <h3>Hair wash</h3>
-          <p>At vero eos et accusamus et iusto odio
-            dignissimos ducimus qui blanditiis praesentium
-            voluptatum deleniti atque corrupti quos</p>
-        </li>
-        <li>
-          <h3>Hair styling</h3>
-          <p>At vero eos et accusamus et iusto odio
-            dignissimos ducimus qui blanditiis praesentium
-            voluptatum deleniti atque corrupti quos</p>
-        </li>
-        <li>
-          <h3>Shave</h3>
-          <p>At vero eos et accusamus et iusto odio
-            dignissimos ducimus qui blanditiis praesentium
-            voluptatum deleniti atque corrupti quos</p>
+        <li class="statistics__item">
+          <p class="statistics__price">30</p>
+          <p class="statistics__text">stores</p>
         </li>
       </ul>
     </section>
-    <section>
-      <h2>Make An Appointment</h2>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+    <section class="services">
+      <h2 class="section-title">Our Services</h2>
+      <p class="services__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
         accusantium doloremque laudantium, totam rem aperiam</p>
-      <form action="#" method="get">
-        <input type="text" name="name" id="nameField" placeholder="Name" required>
-        <input type="email" name="email" placeholder="Email" pattern="[^ @]*@[^ @]*" id="email" required>
-        <input type="tel" name="phone" id="phone" placeholder="Phone" pattern="+[0-9]-[0-9]{3}-[0-9]{7}" required>
-        <select name="services" id="services" multiple required>
+      <ul class="services__list">
+        <li class="services__item">
+          <h3 class="services__title">Hair cut</h3>
+          <p class="services__text">At vero eos et accusamus et iusto odio
+            dignissimos ducimus qui blanditiis praesentium
+            voluptatum deleniti atque corrupti quos</p>
+        </li>
+        <li class="services__item">
+          <h3 class="services__title">Hair wash</h3>
+          <p class="services__text">At vero eos et accusamus et iusto odio
+            dignissimos ducimus qui blanditiis praesentium
+            voluptatum deleniti atque corrupti quos</p>
+        </li>
+        <li class="services__item">
+          <h3 class="services__title">Hair styling</h3>
+          <p class="services__text">At vero eos et accusamus et iusto odio
+            dignissimos ducimus qui blanditiis praesentium
+            voluptatum deleniti atque corrupti quos</p>
+        </li>
+        <li class="services__item">
+          <h3 class="services__title">Shave</h3>
+          <p class="services__text">At vero eos et accusamus et iusto odio
+            dignissimos ducimus qui blanditiis praesentium
+            voluptatum deleniti atque corrupti quos</p>
+        </li>
+      </ul>
+    </section>
+    <section class="appointment">
+      <h2 class="section-title">Make An Appointment</h2>
+      <p class="appointment__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam</p>
+      <form class="appointment__form" action="#" method="get">
+        <input class="appointment__textfield" type="text" name="name" id="nameField" placeholder="Name" required>
+        <input class="appointment__textfield" type="email" name="email" placeholder="Email" pattern="[^ @]*@[^ @]*"
+          id="email" required>
+        <input class="appointment__textfield" type="tel" name="phone" id="phone" placeholder="Phone"
+          pattern="+[0-9]-[0-9]{3}-[0-9]{7}" required>
+        <select class="appointment__select" name="services" id="services" multiple required>
           <option value="hair cut">hair cut</option>
           <option value="hair wash">hair wash</option>
           <option value="hair styling">hair styling</option>
           <option value="shaving">shaving</option>
         </select>
-        <select name="barber" id="barber" required>
+        <select class="appointment__select" name="barber" id="barber" required>
           <option value="Darrell Gibbs">Darrell Gibbs</option>
           <option value="David Clarke">David Clarke</option>
           <option value="Richard Owens">Richard Owens</option>
         </select>
-        <input type="date" name="date" id="date" required>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-        <button type="submit">Make An Appointment</button>
+        <input class="appointment__datefield" type="date" name="date" id="date" required>
+        <textarea class="appointment__message" name="message" id="message" cols="30" rows="10"
+          placeholder="Message"></textarea>
+        <button class="appointment__btn" type="submit">Make An Appointment</button>
       </form>
     </section>
-    <section>
-      <h2>Our Barbers</h2>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+    <section class="barbers">
+      <h2 class="section-title">Our Barbers</h2>
+      <p class="barbers__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
         accusantium doloremque laudantium, totam rem aperiam</p>
-      <ul>
-        <li>
-          <img src="#" alt="Barber Darrell Gibbs">
-          <p>Darrell Gibbs</p>
-          <div>stars</div>
-          <p>Sed ut perspiciatis unde omnis iste
+      <ul class="barbers__list">
+        <li class="barbers__item">
+          <img class="barbers__photo" src="#" alt="Barber Darrell Gibbs">
+          <p class="barbers__name">Darrell Gibbs</p>
+          <div class="barbers__stars">stars</div>
+          <p class="barbers__text">Sed ut perspiciatis unde omnis iste
             natus error sit voluptatem accusantium</p>
         </li>
-        <li>
-          <img src="#" alt="Barber David Clarke">
-          <p>David Clarke</p>
-          <div>stars</div>
-          <p>Sed ut perspiciatis unde omnis iste
+        <li class="barbers__item">
+          <img class="barbers__photo" src="#" alt="Barber David Clarke">
+          <p class="barbers__name">David Clarke</p>
+          <div class="barbers__stars">stars</div>
+          <p class="barbers__text">Sed ut perspiciatis unde omnis iste
             natus error sit voluptatem accusantium</p>
         </li>
-        <li>
-          <img src="#" alt="Barber Richard Owens">
-          <p>Richard Owens</p>
-          <div>stars</div>
-          <p>Sed ut perspiciatis unde omnis iste
+        <li class="barbers__item">
+          <img class="barbers__photo" src="#" alt="Barber Richard Owens">
+          <p class="barbers__name">Richard Owens</p>
+          <div class="barbers__stars">stars</div>
+          <p class="barbers__text">Sed ut perspiciatis unde omnis iste
             natus error sit voluptatem accusantium</p>
         </li>
       </ul>
     </section>
-    <section>
-      <h2>Our Clients Say</h2>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+    <section class="reviews">
+      <h2 class="section-title">Our Clients Say</h2>
+      <p class="reviews__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
         accusantium doloremque laudantium, totam rem aperiam</p>
-      <label>
-        <input type="radio" name="slider-control">Back
+      <label class="reviews__btn reviews__btn--back">
+        <input class="reviews__input" type="radio" name="slider-control">Back
       </label>
-      <label>
-        <input type="radio" name="slider-control">Front
+      <label class="reviews__btn reviews__btn--front">
+        <input class="reviews__input" type="radio" name="slider-control">Front
       </label>
-      <ul>
-        <li>
-          <div>stars</div>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque l
-            audantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+      <ul class="reviews__list">
+        <li class="reviews__item">
+          <div class="reviews__stars">stars</div>
+          <p class="reviews__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
             beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
             aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
             Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,</p>
-          <img src="#" alt="user-photo">
-          <p>George Morgan</p>
+          <img class="reviews__photo" src="#" alt="user-photo">
+          <p class="reviews__name">George Morgan</p>
         </li>
       </ul>
     </section>
-    <section>
-      <h2>Our Gallery</h2>
-      <img src="#" alt="Изображение галереи">
-      <img src="#" alt="Изображение галереи">
-      <img src="#" alt="Изображение галереи">
-      <img src="#" alt="Изображение галереи">
-      <img src="#" alt="Изображение галереи">
-      <img src="#" alt="Изображение галереи">
-      <img src="#" alt="Изображение галереи">
-      <img src="#" alt="Изображение галереи">
-      <img src="#" alt="Изображение галереи">
-      <img src="#" alt="Изображение галереи">
+    <section class="gallery">
+      <h2 class="section-title">Our Gallery</h2>
+      <img class="gallery__img" src="#" alt="Изображение галереи">
+      <img class="gallery__img" src="#" alt="Изображение галереи">
+      <img class="gallery__img" src="#" alt="Изображение галереи">
+      <img class="gallery__img" src="#" alt="Изображение галереи">
+      <img class="gallery__img" src="#" alt="Изображение галереи">
+      <img class="gallery__img" src="#" alt="Изображение галереи">
+      <img class="gallery__img" src="#" alt="Изображение галереи">
+      <img class="gallery__img" src="#" alt="Изображение галереи">
+      <img class="gallery__img" src="#" alt="Изображение галереи">
+      <img class="gallery__img" src="#" alt="Изображение галереи">
+      <img class="gallery__img" src="#" alt="Изображение галереи">
+      <img class="gallery__img" src="#" alt="Изображение галереи">
+      <img class="gallery__img" src="#" alt="Изображение галереи">
+      <img class="gallery__img" src="#" alt="Изображение галереи">
+      <img class="gallery__img" src="#" alt="Изображение галереи">
     </section>
-    <section>
-      <h2>Our Pricing</h2>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+    <section class="prising">
+      <h2 class="section-title">Our Pricing</h2>
+      <p class="prising__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
         accusantium doloremque laudantium, totam rem aperiam</p>
-      <ul>
-        <li>
-          <table border="1">
+      <ul class="prising__list">
+        <li class="prising__item">
+          <table class="prising__table" border="1">
             <tr>
               <td colspan="2">man</td>
             </tr>
@@ -258,8 +297,8 @@
             </tr>
           </table>
         </li>
-        <li>
-          <table border="1">
+        <li class="prising__item">
+          <table class="prising__table" border="1">
             <tr>
               <td colspan="2">woman</td>
             </tr>
@@ -295,23 +334,22 @@
       </ul>
     </section>
   </main>
-  <footer>
-    <section>
-      <h2>contacts</h2>
-      <div>
-        <h3>Subscribe</h3>
-        <p>At vero eos et accusamus et
+  <footer class="page-footer">
+    <div class="page-footer__top">
+      <div class="page-footer__column">
+        <h3 class="page-footer__title">Subscribe</h3>
+        <p class="page-footer__text">At vero eos et accusamus et
           iusto odio dignissimos
           ducimus qui blanditiis.</p>
-        <form action="#" method="get">
-          <input type="email" name="subscribeEmail" id="subscribeEmail" pattern="[^ @]*@[^ @]*"
-            placeholder="Your E-mail">
-          <button type="button">Subscribe</button>
+        <form class="page-footer__form" action="#" method="get">
+          <input class="page-footer__field" type="email" name="subscribeEmail" id="subscribeEmail"
+            pattern="[^ @]*@[^ @]*" placeholder="Your E-mail">
+          <button class="page-footer__btn" type="button">Subscribe</button>
         </form>
       </div>
-      <div>
-        <h3>Working hours</h3>
-        <table border="1">
+      <div class="page-footer__column">
+        <h3 class="page-footer__title">Working hours</h3>
+        <table class="page-footer__table" border="1">
           <tr>
             <td>mon</td>
             <td>9.00 - 18.00</td>
@@ -342,46 +380,73 @@
           </tr>
         </table>
       </div>
-      <div>
-        <h3>latest from blog</h3>
-        <ul>
-          <li>
-            <h4>Lorem ipsum dolor</h4>
-            <p>Sed ut perspiciatis unde omnis iste
+      <div class="page-footer__column">
+        <h3 class="page-footer__title">latest from blog</h3>
+        <ul class="page-footer__list">
+          <li class="page-footer__item">
+            <h4 class="page-footer__blog-title">Lorem ipsum dolor</h4>
+            <p class="page-footer__blog-text">Sed ut perspiciatis unde omnis iste
               natus error sit voluptatem
               accusantium doloremque
               laudantium...</p>
           </li>
-          <li>
-            <h4>Lorem ipsum dolor</h4>
-            <p>Sed ut perspiciatis unde omnis iste
+          <li class="page-footer__item">
+            <h4 class="page-footer__blog-title">Lorem ipsum dolor</h4>
+            <p class="page-footer__blog-text">Sed ut perspiciatis unde omnis iste
               natus error sit voluptatem
               accusantium doloremque...</p>
           </li>
         </ul>
       </div>
-      <div>
-        <h3>instagram</h3>
-        <ul>
-          <li><img src="#" alt="instagrma photo"></li>
-          <li><img src="#" alt="instagrma photo"></li>
-          <li><img src="#" alt="instagrma photo"></li>
-          <li><img src="#" alt="instagrma photo"></li>
-          <li><img src="#" alt="instagrma photo"></li>
-          <li><img src="#" alt="instagrma photo"></li>
+      <div class="page-footer__column">
+        <h3 class="page-footer__title">instagram</h3>
+        <ul class="page-footer__list">
+          <li class="page-footer__item">
+            <img class="page-footer__img" src="#" alt="instagrma photo">
+          </li>
+          <li class="page-footer__item">
+            <img class="page-footer__img" src="#" alt="instagrma photo">
+          </li>
+          <li class="page-footer__item">
+            <img class="page-footer__img" src="#" alt="instagrma photo">
+          </li>
+          <li class="page-footer__item">
+            <img class="page-footer__img" src="#" alt="instagrma photo">
+          </li>
+          <li class="page-footer__item">
+            <img class="page-footer__img" src="#" alt="instagrma photo">
+          </li>
+          <li class="page-footer__item">
+            <img class="page-footer__img" src="#" alt="instagrma photo">
+          </li>
         </ul>
       </div>
-    </section>
-    <section>
-      <h2>copyright</h2>
-      <p>Copyright &copy; 2017 Barber. All rights reserved</p>
-      <ul>
-        <li><a href="#">youtube</a></li>
-        <li><a href="#">twitter</a></li>
-        <li><a href="#">instagram</a></li>
-        <li><a href="#">facebook</a></li>
+    </div>
+    <div class="page-footer__bottom">
+      <p class="page-footer__copy">Copyright &copy; 2017 Barber. All rights reserved</p>
+      <ul class="page-footer__social-list">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--youtube" href="#">
+            youtube
+          </a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--twitter" href="#">
+            twitter
+          </a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--instagram" href="#">
+            instagram
+          </a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--facebook" href="#">
+            facebook
+          </a>
+        </li>
       </ul>
-    </section>
+    </div>
   </footer>
 </body>
 
