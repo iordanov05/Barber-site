@@ -3,30 +3,32 @@
   font-style: normal;
   font-weight: 400;
   src:
-       url('../fonts/quattrocento-sans-v12-latin-regular.woff2') format('woff2'),
-       url('../fonts/quattrocento-sans-v12-latin-regular.woff') format('woff');
+    url('../fonts/quattrocento-sans-v12-latin-regular.woff2') format('woff2'),
+    url('../fonts/quattrocento-sans-v12-latin-regular.woff') format('woff');
 
 }
 
 @font-face {
+
   font-family: 'Quattrocento Sans';
   font-style: normal;
   font-weight: 700;
-  src: 
-       url('../fonts/quattrocento-sans-v12-latin-700.woff2') format('woff2'), 
-       url('../fonts/quattrocento-sans-v12-latin-700.woff') format('woff');
+  src:
+    url('../fonts/quattrocento-sans-v12-latin-700.woff2') format('woff2'),
+    url('../fonts/quattrocento-sans-v12-latin-700.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Vani';
   font-style: normal;
   font-weight: 400;
-  src: 
-       url('../fonts/Vani.woff2') format('woff2'), 
-       url('../fonts/Vani.woff') format('woff');
+  src:
+    url('../fonts/Vani.woff2') format('woff2'),
+    url('../fonts/Vani.woff') format('woff');
 }
 
 body {
+  min-width: 1170px;
   font-size: 18px;
   line-height: 30px;
   color: #3d3d3d;
@@ -129,10 +131,10 @@ a {
 
 .slider__slogan {
   font-size: 72px;
-line-height: 95px;
-font-family: "Vani", 'Times New Roman', serif;
-font-weight: bold;
-text-transform: uppercase;
+  line-height: 95px;
+  font-family: "Vani", 'Times New Roman', serif;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .slider__text--white {
@@ -143,6 +145,7 @@ text-transform: uppercase;
 .slider__text--brown {
   color: #985336;
 }
+
 .slider__btn {
   font-size: 30px;
   letter-spacing: 1px;
@@ -238,18 +241,3 @@ text-transform: uppercase;
   font-family: "Vani", 'Times New Roman', serif;
   text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
