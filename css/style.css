@@ -276,6 +276,9 @@ a {
   color: #ffffff;
   font-weight: 700;
   text-align: center;
+  letter-spacing: 0.05em;
+  margin-top: 10px;
+  text-transform: uppercase;
 }
 
 .services__title {
@@ -326,4 +329,65 @@ a {
   color: #ffffff;
   font-family: "Vani", 'Times New Roman', serif;
   text-align: center;
+}
+
+.statistics {
+  background-color: #000000;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/bg-2.jpg");
+  padding-top: 56px;
+  padding-bottom: 33px;
+}
+
+.statistics__list {
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 5px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.statistics__item {
+  width: 260px;
+}
+
+.statistics__price {
+  margin: 0;
+  line-height: 1;
+  letter-spacing: 5.6px;
+}
+
+.appointment {
+  background-color: #000000;
+}
+
+.appointment__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.appointment__column {
+  width: 50%;
+}
+
+.appointment__textfield {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.appointment__select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.appointment__datefield {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.appointment__message {
+  width: 100%;
 }

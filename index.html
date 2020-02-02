@@ -116,25 +116,27 @@
       </ul>
     </section>
     <section class="statistics">
-      <h2 class="section-title visually-hidden">Statistics</h2>
-      <ul class="statistics__list">
-        <li class="statistics__item">
-          <p class="statistics__price">2500</p>
-          <p class="statistics__text">happy clients</p>
-        </li>
-        <li class="statistics__item">
-          <p class="statistics__price">300</p>
-          <p class="statistics__text">coffee cups</p>
-        </li>
-        <li class="statistics__item">
-          <p class="statistics__price">120</p>
-          <p class="statistics__text">barbers</p>
-        </li>
-        <li class="statistics__item">
-          <p class="statistics__price">30</p>
-          <p class="statistics__text">stores</p>
-        </li>
-      </ul>
+      <div class="container">
+        <h2 class="section-title visually-hidden">Statistics</h2>
+        <ul class="statistics__list">
+          <li class="statistics__item">
+            <p class="statistics__price">2500</p>
+            <p class="statistics__text">happy clients</p>
+          </li>
+          <li class="statistics__item">
+            <p class="statistics__price">300</p>
+            <p class="statistics__text">coffee cups</p>
+          </li>
+          <li class="statistics__item">
+            <p class="statistics__price">120</p>
+            <p class="statistics__text">barbers</p>
+          </li>
+          <li class="statistics__item">
+            <p class="statistics__price">30</p>
+            <p class="statistics__text">stores</p>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="services">
       <h2 class="section-title">Our Services</h2>
@@ -168,31 +170,37 @@
       </ul>
     </section>
     <section class="appointment">
-      <h2 class="section-title">Make An Appointment</h2>
-      <p class="appointment__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam</p>
-      <form class="appointment__form" action="#" method="get">
-        <input class="appointment__textfield" type="text" name="name" id="nameField" placeholder="Name" required>
-        <input class="appointment__textfield" type="email" name="email" placeholder="Email" pattern="[^ @]*@[^ @]*"
-          id="email" required>
-        <input class="appointment__textfield" type="tel" name="phone" id="phone" placeholder="Phone"
-          pattern="+[0-9]-[0-9]{3}-[0-9]{7}" required>
-        <select class="appointment__select" name="services" id="services" multiple required>
-          <option value="hair cut">hair cut</option>
-          <option value="hair wash">hair wash</option>
-          <option value="hair styling">hair styling</option>
-          <option value="shaving">shaving</option>
-        </select>
-        <select class="appointment__select" name="barber" id="barber" required>
-          <option value="Darrell Gibbs">Darrell Gibbs</option>
-          <option value="David Clarke">David Clarke</option>
-          <option value="Richard Owens">Richard Owens</option>
-        </select>
-        <input class="appointment__datefield" type="date" name="date" id="date" required>
-        <textarea class="appointment__message" name="message" id="message" cols="30" rows="10"
-          placeholder="Message"></textarea>
-        <button class="appointment__btn" type="submit">Make An Appointment</button>
-      </form>
+      <div class="container">
+        <h2 class="section-title">Make An Appointment</h2>
+        <p class="appointment__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam</p>
+        <form class="appointment__form" action="#" method="get">
+          <div class="appointment__column">
+            <input class="appointment__textfield" type="text" name="name" id="nameField" placeholder="Name" required>
+            <input class="appointment__textfield" type="email" name="email" placeholder="Email" pattern="[^ @]*@[^ @]*"
+              id="email" required>
+            <input class="appointment__textfield" type="tel" name="phone" id="phone" placeholder="Phone"
+              pattern="+[0-9]-[0-9]{3}-[0-9]{7}" required>
+          </div>
+          <div class="appointment__column">
+            <select class="appointment__select" name="services" id="services" required>
+              <option value="hair cut">hair cut</option>
+              <option value="hair wash">hair wash</option>
+              <option value="hair styling">hair styling</option>
+              <option value="shaving">shaving</option>
+            </select>
+            <select class="appointment__select" name="barber" id="barber" required>
+              <option value="Darrell Gibbs">Darrell Gibbs</option>
+              <option value="David Clarke">David Clarke</option>
+              <option value="Richard Owens">Richard Owens</option>
+            </select>
+            <input class="appointment__datefield" type="date" name="date" id="date" required>
+          </div>
+          <textarea class="appointment__message" name="message" id="message" cols="30" rows="10"
+            placeholder="Message"></textarea>
+          <button class="appointment__btn" type="submit">Make An Appointment</button>
+        </form>
+      </div>
     </section>
     <section class="barbers">
       <h2 class="section-title">Our Barbers</h2>
@@ -247,6 +255,8 @@
     </section>
     <section class="gallery">
       <h2 class="section-title">Our Gallery</h2>
+      <p class="gallery__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam</p>
       <img class="gallery__img" width="384" height="384" src="img/1.jpg" alt="Изображение галереи">
       <img class="gallery__img" width="384" height="384" src="img/2.jpg" alt="Изображение галереи">
       <img class="gallery__img" width="384" height="384" src="img/3.jpg" alt="Изображение галереи">
