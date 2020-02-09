@@ -72,21 +72,25 @@
 
   <main class="page-main">
     <h1 class="page-main__title visually-hidden">Barbershop</h1>
+
     <section class="slider">
       <h2 class="section-title visually-hidden">Promotions</h2>
-      <label class="slider__btn slider__btn--back">
-        <input class="slider__input" type="radio" name="slider-control">Back
-      </label>
-      <label class="slider__btn slider__btn--front">
-        <input class="slider__input" type="radio" name="slider-control">Front
-      </label>
+
+      <input class="slider__input visually-hidden" type="radio" name="slider-control" id="sliderB">
+      <input class="slider__input visually-hidden" type="radio" name="slider-control" id="sliderF">
+
+      <label class="slider__btn-round slider__btn--back" for="sliderB"></label>
+      <label class="slider__btn-round slider__btn--front" for="sliderF"></label>
+
+
       <ul class="slider__list">
         <li class="slider__item">
           <p class="slider__slogan">
             <span class="slider__text slider__text--white">welcome to the</span>
             <span class="slider__text slider__text--brown">barbershop</span>
+            <a class="slider__btn slider__btn--rect" href="#">Make An Appointment</a>
           </p>
-          <a class="slider__btn slider__btn--rect" href="#">Make An Appointment</a>
+          <img class="slider__img" src="img/bg-1.jpg" alt="slider_1" width="1831" height="986">
         </li>
       </ul>
     </section>
