@@ -55,19 +55,25 @@ a {
   width: 1140px;
   margin: 0 auto;
 }
+.container2 {
+  width: 750px;
+  margin: 0 auto;
+}
 .appointment__form {
  display: flex;
  flex-wrap: wrap;
  justify-content: space-between;
 }
 .appointment__textfield {
+  display: list-item;
   width: 48%;
   box-sizing: border-box;
   border: none;
   background-color: transparent;
   border-bottom:1px solid #808080;
   color: #808080;
-padding: 10px;
+padding: 30px;
+
 
 }
 .appointment__message {
@@ -87,7 +93,8 @@ padding: 10px;
   border: none;
   border-bottom:1px solid #808080;
   color: #808080;
-  
+  display: list-item;
+ 
 }
 .appointment__datefield{
   width: 48%;
@@ -96,6 +103,8 @@ padding: 10px;
   border: none;
   border-bottom:1px solid #808080;
   color: #808080;
+  display: list-item;
+ 
 }
 .appointment__btn {
   margin-top: 30px;
@@ -220,31 +229,74 @@ padding: 10px;
 }
 
 .slider__slogan {
+  position: absolute;
+  width: 486px;
+  top: 262px;
+  left: 349px;
   font-size: 72px;
   line-height: 95px;
   font-family: "Vani", 'Times New Roman', serif;
   font-weight: bold;
   text-transform: uppercase;
 }
+.slider {
+  background-color:  #acacac;
+  background-image: radial-gradient( circle, rgb(171,171,171) 0%, rgb(155,155,155) 100%);
+  margin-top: -75px;
+}
+.slider__img {
 
+  height: auto;
+}
+.slider__item {
+  position: relative;
+}
+.slider__text {
+  letter-spacing: 6.5px;
+}
 .slider__text--white {
   color: #ffffff;
 }
-
+.slider__list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 1831px;
+}
 
 .slider__text--brown {
   color: #985336;
 }
 
+.slider__btn-round {
+  position: absolute;
+  display: block;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 2px solid #985336;
+}
+.slider__btn-round::before{
+  position: absolute;
+  content: "";
+  top: 23px;
+  left: 28px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #985336;
+  border-top: none;
+  border-right: none;
+  transform: rotate(45deg);
+}
 .slider__btn {
   font-size: 30px;
-  letter-spacing: 1px;
-  line-height: 95px;
-  color: #ffffff;
+  line-height: 1.5;
   font-weight: 400;
+  letter-spacing: 0.025cm;
+  color: #ffffff;
+  display: block;
+  border: 2px solid #985336;
 }
-
-
 .section-title {
   font-size: 36px;
   letter-spacing: 1px;
@@ -256,6 +308,8 @@ padding: 10px;
 }
 .page-header__nav {
   background-color: rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 10;
 }
 .about__title {
   font-size: 20px;

@@ -74,19 +74,22 @@
     <h1 class="page-main__title visually-hidden">Barbershop</h1>
     <section class="slider">
       <h2 class="section-title visually-hidden">Promotions</h2>
-      <label class="slider__btn slider__btn--back">
-        <input class="slider__input" type="radio" name="slider-control">Back
-      </label>
-      <label class="slider__btn slider__btn--front">
-        <input class="slider__input" type="radio" name="slider-control">Front
-      </label>
+
+      <input class="slider__input visually-hidden" type="radio" name="slider-control" id="sliderB">
+      <input class="slider__input visually-hidden" type="radio" name="slider-control" id="sliderF">
+
+      <label class="slider__btn-round slider__btn--back" for="sliderB"></label>
+      <label class="slider__btn-round slider__btn--front" for="sliderF"></label>
+
+
       <ul class="slider__list">
         <li class="slider__item">
           <p class="slider__slogan">
             <span class="slider__text slider__text--white">welcome to the</span>
             <span class="slider__text slider__text--brown">barbershop</span>
+            <a class="slider__btn slider__btn--rect" href="#">Make An Appointment</a>
           </p>
-          <a class="slider__btn slider__btn--rect" href="#">Make An Appointment</a>
+          <img class="slider__img" src="/Barber-site/img/bg-1.jpg" alt="slider_1" width="1831" height="986">
         </li>
       </ul>
     </section>
@@ -174,25 +177,35 @@
         <p class="appointment__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br>
           accusantium doloremque laudantium, totam rem aperiam</p>
         <form class="appointment__form" action="#" method="get">
-          <input class="appointment__textfield" type="text" name="name" id="nameField" placeholder="Name" required>
-          <select class="appointment__select" name="services" id="services" required>
-            <option value="hair cut">hair cut</option>
-            <option value="hair wash">hair wash</option>
-            <option value="hair styling">hair styling</option>
-            <option value="shaving">shaving</option>
-          </select>
-          <input class="appointment__textfield" type="tel" name="phone" id="phone" placeholder="Phone"
-            pattern="+[0-9]-[0-9]{3}-[0-9]{7}" required>
-          <select class="appointment__select" name="barber" id="barber" required>
-            <option value="Darrell Gibbs">Darrell Gibbs</option>
-            <option value="David Clarke">David Clarke</option>
-            <option value="Richard Owens">Richard Owens</option>
-          </select>
-          <input class="appointment__textfield" type="email" name="email" placeholder="Email" pattern="[^ @]*@[^ @]*"
-            id="email" required>
-          <input class="appointment__datefield" type="date" name="date" id="date" required>
-          <textarea class="appointment__message" name="message" id="message" cols="30" rows="10"
-            placeholder="Message"></textarea>
+          <div class="container2">
+            <div class="container3"> <input class="appointment__textfield" type="text" name="name" id="nameField"
+                placeholder="Name" required>
+
+              <input class="appointment__textfield" type="tel" name="phone" id="phone" placeholder="Phone"
+                pattern="+[0-9]-[0-9]{3}-[0-9]{7}" required>
+
+              <input class="appointment__textfield" type="email" name="email" placeholder="Email"
+                pattern="[^ @]*@[^ @]*" id="email" required></div>
+
+            <div class="container4">
+              <select class="appointment__select" name="services" id="services" required>
+                <option value="hair cut">hair cut</option>
+                <option value="hair wash">hair wash</option>
+                <option value="hair styling">hair styling</option>
+                <option value="shaving">shaving</option>
+              </select>
+              <select class="appointment__select" name="barber" id="barber" required>
+                <option value="Darrell Gibbs">Darrell Gibbs</option>
+                <option value="David Clarke">David Clarke</option>
+                <option value="Richard Owens">Richard Owens</option>
+              </select>
+              <input class="appointment__datefield" type="date" name="date" id="date" required>
+            </div>
+
+            <textarea class="appointment__message" name="message" id="message" cols="30" rows="10"
+              placeholder="Message"></textarea>
+          </div>
+
           <button class="appointment__btn" type="submit">Make An Appointment</button>
         </form>
 
