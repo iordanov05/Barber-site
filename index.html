@@ -72,15 +72,16 @@
 
   <main class="page-main">
     <h1 class="page-main__title visually-hidden">Barbershop</h1>
+
     <section class="slider">
       <h2 class="section-title visually-hidden">Promotions</h2>
 
-      <input class="slider__input visually-hidden" type="radio" name="slider-control" id="sliderB">
-      <input class="slider__input visually-hidden" type="radio" name="slider-control" id="sliderF">
-
-      <label class="slider__btn-round slider__btn--back" for="sliderB"></label>
-      <label class="slider__btn-round slider__btn--front" for="sliderF"></label>
-
+      <div class="container">
+        <input class="slider__input visually-hidden" type="radio" name="slider-control" id="sliderB">
+        <label class="slider__btn-round slider__btn--back" for="sliderB"></label>
+        <input class="slider__input visually-hidden" type="radio" name="slider-control" id="sliderF">
+        <label class="slider__btn-round slider__btn--front" for="sliderF"></label>
+      </div>
 
       <ul class="slider__list">
         <li class="slider__item">
@@ -89,55 +90,62 @@
             <span class="slider__text slider__text--brown">barbershop</span>
             <a class="slider__btn slider__btn--rect" href="#">Make An Appointment</a>
           </p>
-          <img class="slider__img" src="/Barber-site/img/bg-1.jpg" alt="slider_1" width="1831" height="986">
+          <img class="slider__img" src="img/bg-1.jpg" alt="slider_1" width="1831" height="986">
         </li>
       </ul>
     </section>
     <section class="about">
-      <h2 class="section-title">About us</h2>
-      <p class="about__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam</p>
-      <ul class="about__list">
-        <li class="about__item">
-          <h3 class="about__title">New Yourk’s №1 Barbershop</h3>
-          <p class="about__text">Sed ut perspiciatis unde omnis iste
-            natus error sit voluptatem
-            accusantium doloremque laudantium.</p>
-        </li>
-        <li class="about__item">
-          <h3 class="about__title">Profeccionals Barbers</h3>
-          <p class="about__text">Sed ut perspiciatis unde omnis iste
-            natus error sit voluptatem
-            accusantium doloremque laudantium.</p>
-        </li>
-        <li class="about__item">
-          <h3 class="about__title">Branded Products</h3>
-          <p class="about__text">Sed ut perspiciatis unde omnis iste
-            natus error sit voluptatem
-            accusantium doloremque laudantium.</p>
-        </li>
-      </ul>
+      <div class="container">
+        <h2 class="section-title">About us</h2>
+
+        <div class="section-img"></div>
+
+        <p class="about__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam</p>
+        <ul class="about__list">
+          <li class="about__item">
+            <h3 class="about__title">New Yourk’s №1 Barbershop</h3>
+            <p class="about__text">Sed ut perspiciatis unde omnis iste
+              natus error sit voluptatem
+              accusantium doloremque laudantium.</p>
+          </li>
+          <li class="about__item">
+            <h3 class="about__title">Profeccionals Barbers</h3>
+            <p class="about__text">Sed ut perspiciatis unde omnis iste
+              natus error sit voluptatem
+              accusantium doloremque laudantium.</p>
+          </li>
+          <li class="about__item">
+            <h3 class="about__title">Branded Products</h3>
+            <p class="about__text">Sed ut perspiciatis unde omnis iste
+              natus error sit voluptatem
+              accusantium doloremque laudantium.</p>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="statistics">
-      <h2 class="section-title visually-hidden">Statistics</h2>
-      <ul class="statistics__list">
-        <li class="statistics__item">
-          <p class="statistics__price">2500</p>
-          <p class="statistics__text">happy clients</p>
-        </li>
-        <li class="statistics__item">
-          <p class="statistics__price">300</p>
-          <p class="statistics__text">coffee cups</p>
-        </li>
-        <li class="statistics__item">
-          <p class="statistics__price">120</p>
-          <p class="statistics__text">barbers</p>
-        </li>
-        <li class="statistics__item">
-          <p class="statistics__price">30</p>
-          <p class="statistics__text">stores</p>
-        </li>
-      </ul>
+      <div class="container">
+        <h2 class="section-title visually-hidden">Statistics</h2>
+        <ul class="statistics__list">
+          <li class="statistics__item">
+            <p class="statistics__price">2500</p>
+            <p class="statistics__text">happy clients</p>
+          </li>
+          <li class="statistics__item">
+            <p class="statistics__price">300</p>
+            <p class="statistics__text">coffee cups</p>
+          </li>
+          <li class="statistics__item">
+            <p class="statistics__price">120</p>
+            <p class="statistics__text">barbers</p>
+          </li>
+          <li class="statistics__item">
+            <p class="statistics__price">30</p>
+            <p class="statistics__text">stores</p>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="services">
       <h2 class="section-title">Our Services</h2>
@@ -173,45 +181,34 @@
     <section class="appointment">
       <div class="container">
         <h2 class="section-title section-title--white">Make An Appointment</h2>
-        <div class="bgimage"></div>
-        <p class="appointment__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br>
+        <p class="appointment__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam</p>
         <form class="appointment__form" action="#" method="get">
-          <div class="container2">
-            <div class="container3"> <input class="appointment__textfield" type="text" name="name" id="nameField"
-                placeholder="Name" required>
-
-              <input class="appointment__textfield" type="tel" name="phone" id="phone" placeholder="Phone"
-                pattern="+[0-9]-[0-9]{3}-[0-9]{7}" required>
-
-              <input class="appointment__textfield" type="email" name="email" placeholder="Email"
-                pattern="[^ @]*@[^ @]*" id="email" required></div>
-
-            <div class="container4">
-              <select class="appointment__select" name="services" id="services" required>
-                <option value="hair cut">hair cut</option>
-                <option value="hair wash">hair wash</option>
-                <option value="hair styling">hair styling</option>
-                <option value="shaving">shaving</option>
-              </select>
-              <select class="appointment__select" name="barber" id="barber" required>
-                <option value="Darrell Gibbs">Darrell Gibbs</option>
-                <option value="David Clarke">David Clarke</option>
-                <option value="Richard Owens">Richard Owens</option>
-              </select>
-              <input class="appointment__datefield" type="date" name="date" id="date" required>
-            </div>
-
-            <textarea class="appointment__message" name="message" id="message" cols="30" rows="10"
-              placeholder="Message"></textarea>
+          <div class="appointment__column">
+            <input class="appointment__textfield" type="text" name="name" id="nameField" placeholder="Name" required>
+            <input class="appointment__textfield" type="email" name="email" placeholder="Email" pattern="[^ @]*@[^ @]*"
+              id="email" required>
+            <input class="appointment__textfield" type="tel" name="phone" id="phone" placeholder="Phone"
+              pattern="+[0-9]-[0-9]{3}-[0-9]{7}" required>
           </div>
-
+          <div class="appointment__column">
+            <select class="appointment__select" name="services" id="services" required>
+              <option value="hair cut">hair cut</option>
+              <option value="hair wash">hair wash</option>
+              <option value="hair styling">hair styling</option>
+              <option value="shaving">shaving</option>
+            </select>
+            <select class="appointment__select" name="barber" id="barber" required>
+              <option value="Darrell Gibbs">Darrell Gibbs</option>
+              <option value="David Clarke">David Clarke</option>
+              <option value="Richard Owens">Richard Owens</option>
+            </select>
+            <input class="appointment__datefield" type="date" name="date" id="date" required>
+          </div>
+          <textarea class="appointment__message" name="message" id="message" cols="30" rows="10"
+            placeholder="Message"></textarea>
           <button class="appointment__btn" type="submit">Make An Appointment</button>
         </form>
-
-
-
-
       </div>
     </section>
     <section class="barbers">
@@ -243,7 +240,7 @@
       </ul>
     </section>
     <section class="reviews">
-      <h2 class="section-title  section-title--white">Our Clients Say</h2>
+      <h2 class="section-title section-title--white">Our Clients Say</h2>
       <p class="reviews__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
         accusantium doloremque laudantium, totam rem aperiam</p>
       <label class="reviews__btn reviews__btn--back">
@@ -267,16 +264,20 @@
     </section>
     <section class="gallery">
       <h2 class="section-title">Our Gallery</h2>
-      <img class="gallery__img" width="384" height="384" src="img/1.jpg" alt="Изображение галереи">
-      <img class="gallery__img" width="384" height="384" src="img/2.jpg" alt="Изображение галереи">
-      <img class="gallery__img" width="384" height="384" src="img/3.jpg" alt="Изображение галереи">
-      <img class="gallery__img" width="384" height="384" src="img/4.jpg" alt="Изображение галереи">
-      <img class="gallery__img" width="384" height="384" src="img/5.jpg" alt="Изображение галереи">
-      <img class="gallery__img" width="384" height="384" src="img/6.jpg" alt="Изображение галереи">
-      <img class="gallery__img" width="384" height="384" src="img/7.jpg" alt="Изображение галереи">
-      <img class="gallery__img" width="384" height="384" src="img/8.jpg" alt="Изображение галереи">
-      <img class="gallery__img" width="384" height="384" src="img/9.jpg" alt="Изображение галереи">
-      <img class="gallery__img" width="384" height="384" src="img/10.jpg" alt="Изображение галереи">
+      <p class="gallery__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam</p>
+      <div class="gallery__wrapper">
+        <img class="gallery__img" width="384" height="384" src="img/1.jpg" alt="Изображение галереи">
+        <img class="gallery__img" width="384" height="384" src="img/2.jpg" alt="Изображение галереи">
+        <img class="gallery__img" width="384" height="384" src="img/3.jpg" alt="Изображение галереи">
+        <img class="gallery__img" width="384" height="384" src="img/4.jpg" alt="Изображение галереи">
+        <img class="gallery__img" width="384" height="384" src="img/5.jpg" alt="Изображение галереи">
+        <img class="gallery__img" width="384" height="384" src="img/6.jpg" alt="Изображение галереи">
+        <img class="gallery__img" width="384" height="384" src="img/7.jpg" alt="Изображение галереи">
+        <img class="gallery__img" width="384" height="384" src="img/8.jpg" alt="Изображение галереи">
+        <img class="gallery__img" width="384" height="384" src="img/9.jpg" alt="Изображение галереи">
+        <img class="gallery__img" width="384" height="384" src="img/10.jpg" alt="Изображение галереи">
+      </div>
     </section>
     <section class="prising">
       <h2 class="section-title">Our Pricing</h2>
@@ -284,7 +285,7 @@
         accusantium doloremque laudantium, totam rem aperiam</p>
       <ul class="prising__list">
         <li class="prising__item">
-          <table class="prising__table" border="1">
+          <table class="prising__table">
             <tr>
               <td colspan="2">man</td>
             </tr>
@@ -318,7 +319,7 @@
           </table>
         </li>
         <li class="prising__item">
-          <table class="prising__table" border="1">
+          <table class="prising__table">
             <tr>
               <td colspan="2">woman</td>
             </tr>
@@ -369,7 +370,7 @@
       </div>
       <div class="page-footer__column">
         <h3 class="page-footer__title">Working hours</h3>
-        <table class="page-footer__table" border="1">
+        <table class="page-footer__table">
           <tr>
             <td>mon</td>
             <td>9.00 - 18.00</td>
