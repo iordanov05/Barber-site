@@ -32,7 +32,7 @@
           </p>
         </li>
         <li class="page-header__info-item">
-          <a class="page-header__info-link" href="#"></a>
+          <a class="page-header__info-link page-header__info-link--search" href="#"></a>
         </li>
       </ul>
 
@@ -103,7 +103,7 @@
 
         <div class="section-img"></div>
 
-        <p class="about__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        <p class="about__description section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam</p>
         <ul class="about__list">
           <li class="about__item">
@@ -152,18 +152,16 @@
       </div>
     </section>
     <section class="services">
-      <h2 class="section-title">Our Services</h2>
-      <p class="services__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam</p>
+      <div class="container">
+        <h2 class="section-title services__heading">Our Services</h2>
+        <div class="section-img"></div>
+        <p class="services__description section-description">Sed ut perspiciatis unde omnis iste natus error sit
+          voluptatem
+          accusantium doloremque laudantium, totam rem aperiam</p>
+      </div>
       <ul class="services__list">
         <li class="services__item">
           <h3 class="services__title">Hair cut</h3>
-          <p class="services__text">At vero eos et accusamus et iusto odio
-            dignissimos ducimus qui blanditiis praesentium
-            voluptatum deleniti atque corrupti quos</p>
-        </li>
-        <li class="services__item">
-          <h3 class="services__title">Hair wash</h3>
           <p class="services__text">At vero eos et accusamus et iusto odio
             dignissimos ducimus qui blanditiis praesentium
             voluptatum deleniti atque corrupti quos</p>
@@ -175,12 +173,19 @@
             voluptatum deleniti atque corrupti quos</p>
         </li>
         <li class="services__item">
+          <h3 class="services__title">Hair wash</h3>
+          <p class="services__text">At vero eos et accusamus et iusto odio
+            dignissimos ducimus qui blanditiis praesentium
+            voluptatum deleniti atque corrupti quos</p>
+        </li>
+        <li class="services__item">
           <h3 class="services__title">Shave</h3>
           <p class="services__text">At vero eos et accusamus et iusto odio
             dignissimos ducimus qui blanditiis praesentium
             voluptatum deleniti atque corrupti quos</p>
         </li>
       </ul>
+
     </section>
     <section class="appointment">
       <div class="container">
@@ -216,32 +221,54 @@
       </div>
     </section>
     <section class="barbers">
-      <h2 class="section-title">Our Barbers</h2>
-      <p class="barbers__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam</p>
-      <ul class="barbers__list">
-        <li class="barbers__item">
-          <img class="barbers__photo" src="img/barber_1.png" alt="Barber Darrell Gibbs" width="360" height="460">
-          <p class="barbers__name">Darrell Gibbs</p>
-          <div class="barbers__stars">stars</div>
-          <p class="barbers__text">Sed ut perspiciatis unde omnis iste
-            natus error sit voluptatem accusantium</p>
-        </li>
-        <li class="barbers__item">
-          <img class="barbers__photo" src="img/barber_2.png" alt="Barber David Clarke" width="360" height="460">
-          <p class="barbers__name">David Clarke</p>
-          <div class="barbers__stars">stars</div>
-          <p class="barbers__text">Sed ut perspiciatis unde omnis iste
-            natus error sit voluptatem accusantium</p>
-        </li>
-        <li class="barbers__item">
-          <img class="barbers__photo" src="img/barber_3.jpg" alt="Barber Richard Owens" width="360" height="460">
-          <p class="barbers__name">Richard Owens</p>
-          <div class="barbers__stars">stars</div>
-          <p class="barbers__text">Sed ut perspiciatis unde omnis iste
-            natus error sit voluptatem accusantium</p>
-        </li>
-      </ul>
+      <div class="container">
+        <h2 class="section-title">Our Barbers</h2>
+        <div class="section-img"></div>
+        <p class="section-description barbers__description">Sed ut perspiciatis unde omnis iste natus error sit
+          voluptatem
+          accusantium doloremque laudantium, totam rem aperiam</p>
+        <ul class="barbers__list">
+          <li class="barbers__item">
+            <img class="barbers__photo" src="img/barber_1.png" alt="Barber Darrell Gibbs" width="360" height="460">
+            <p class="barbers__name">Darrell Gibbs</p>
+            <ul class="barbers__stars">
+              <li class="barbers__star"></li>
+              <li class="barbers__star"></li>
+              <li class="barbers__star"></li>
+              <li class="barbers__star"></li>
+              <li class="barbers__star"></li>
+            </ul>
+            <p class="barbers__text">Sed ut perspiciatis unde omnis iste
+              natus error sit voluptatem accusantium</p>
+          </li>
+          <li class="barbers__item">
+            <img class="barbers__photo" src="img/barber_2.png" alt="Barber David Clarke" width="360" height="460">
+            <p class="barbers__name">David Clarke</p>
+            <ul class="barbers__stars">
+              <li class="barbers__star"></li>
+              <li class="barbers__star"></li>
+              <li class="barbers__star"></li>
+              <li class="barbers__star"></li>
+              <li class="barbers__star"></li>
+            </ul>
+            <p class="barbers__text">Sed ut perspiciatis unde omnis iste
+              natus error sit voluptatem accusantium</p>
+          </li>
+          <li class="barbers__item">
+            <img class="barbers__photo" src="img/barber_3.jpg" alt="Barber Richard Owens" width="360" height="460">
+            <p class="barbers__name">Richard Owens</p>
+            <ul class="barbers__stars">
+              <li class="barbers__star"></li>
+              <li class="barbers__star"></li>
+              <li class="barbers__star"></li>
+              <li class="barbers__star"></li>
+              <li class="barbers__star"></li>
+            </ul>
+            <p class="barbers__text">Sed ut perspiciatis unde omnis iste
+              natus error sit voluptatem accusantium</p>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="reviews">
       <h2 class="section-title section-title--white">Our Clients Say</h2>
