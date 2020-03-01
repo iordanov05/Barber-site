@@ -599,9 +599,9 @@ a {
   font-size: 24px;
   line-height: 1.5;
   font-family: "Vani", "Times New Roman", serif;
+  text-align: center;
   color: #0b0b0b;
   letter-spacing: 1px;
-  text-align: center;
 }
 
 .barbers__text {
@@ -609,15 +609,17 @@ a {
 }
 
 .barbers__stars {
-  list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
-  display: flex;
+
+  list-style: none;
 }
 
 .barbers__star {
   width: 17px;
   height: 17px;
+
   background-image: url("../img/star-fill.png");
 }
 
@@ -677,9 +679,10 @@ a {
 .services {
   padding-top: 113px;
   padding-bottom: 318px;
+
   background-image: url("../img/man.png"), linear-gradient(to top, transparent, white 64%), url("../img/bg-3.jpg");
-  background-position: center 391px;
   background-repeat: no-repeat;
+  background-position: center 391px;
 }
 
 .services__heading {
@@ -766,39 +769,127 @@ a {
 .appointment__form {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .appointment__column {
-  width: 50%;
+  width: 48%;
 }
 
 .appointment__textfield {
   box-sizing: border-box;
   width: 100%;
+  padding: 10px;
+
+  color: white;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #c1c1c1;
 }
 
 .appointment__select {
   box-sizing: border-box;
   width: 100%;
+  padding: 10px;
+  padding-bottom: 11px;
+
+  color: white;
+
+  background-color: transparent;
+  border: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.appointment__select-wrapper {
+  position: relative;
+}
+
+.appointment__select-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: #c1c1c1;
 }
 
 .appointment__datefield {
   box-sizing: border-box;
   width: 100%;
+  padding: 7px 10px;
+
+  color: white;
+
+  background-color: transparent;
+  border: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.appointment__select-wrapper--date::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 0;
+
+  width: 50px;
+  height: 90%;
+
+  background-color: black;
+
+  pointer-events: none;
 }
 
 .appointment__message {
+  box-sizing: border-box;
   width: 100%;
+  padding: 10px;
+
+  color: white;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #c1c1c1;
+
+  resize: none;
+}
+
+.appointment__btn {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 35px;
+  padding: 15px 20px;
+
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.5;
+  font-family: "Quattrocento Sans", "Arial", sans-serif;
+  color: #ffffff;
+  text-transform: capitalize;
+  letter-spacing: 0.025em;
+
+  background-color: #995437;
+  border: 2.0px solid #6e331a;
 }
 
 .barbers__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .barbers__item {
@@ -810,4 +901,15 @@ a {
   flex-wrap: wrap;
   width: 1920px;
   margin: 0 auto;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.modal--hide {
+  display: none;
 }
