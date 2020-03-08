@@ -4,7 +4,7 @@
   font-style: normal;
 
   src: url("../fonts/quattrocento-sans-v12-latin-regular.woff2") format("woff2"),
-  url("../fonts/quattrocento-sans-v12-latin-regular.woff") format("woff");
+    url("../fonts/quattrocento-sans-v12-latin-regular.woff") format("woff");
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-style: normal;
 
   src: url("../fonts/quattrocento-sans-v12-latin-700.woff2") format("woff2"),
-  url("../fonts/quattrocento-sans-v12-latin-700.woff") format("woff");
+    url("../fonts/quattrocento-sans-v12-latin-700.woff") format("woff");
 }
 
 @font-face {
@@ -22,7 +22,7 @@
   font-style: normal;
 
   src: url("../fonts/Vani.woff2") format("woff2"),
-  url("../fonts/Vani.woff") format("woff");
+    url("../fonts/Vani.woff") format("woff");
 }
 
 /* globals */
@@ -60,99 +60,6 @@ a {
 
   width: 1140px;
   margin: 0 auto;
-}
-.container2 {
-  width: 750px;
-  margin: 0 auto;
-}
-.appointment__form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.appointment__textfield {
-  display: list-item;
-  box-sizing: border-box;
-  width: 48%;
-  padding: 10px;
-  width: 100%;
-
-  color: #808080;
-
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #808080;
-}
-.appointment__message {
-  width: 100%;
-  height: 120px;
-  padding-top: 50px;
-
-  color: #808080;
-
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #808080;
-}
-.appointment__select {
-  display: list-item;
-  box-sizing: border-box;
- width: 100%;
-  color: #808080;
-  background-color: transparent;
-  border: none;
-  padding: 10px;
-  padding-bottom: 11px;
-
-  
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-.appointment__select-wraper{
-  position: relative;
-}
-.appointment__select-wraper::after{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  left: 0;
-  bottom: 0;
-  background-color: #808080;
-
-}
-.appointment__datefield {
-  display: list-item;
-  box-sizing: border-box;
-  width: 48%;
-  padding: 7px 10px;
-  color: #808080;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #808080;
- 
-}
-.appointment__select-wraper--date::before{
-  content: "";
-  position: absolute;
-  top: 2px;
-  right: 0;
-  left: 490px;
-  width: 74px;
-  height: 36px;
-  background-color: black;
-  pointer-events: none;
-}
-.appointment__btn {
-  width: 240px;
-  height: 70px;
-  margin-top: 30px;
-
-  color: #ffffff;
-
-  background-color: #985336;
-  border: 1px solid #6e331a;
 }
 
 /* page-header */
@@ -342,16 +249,6 @@ a {
 .main-menu__link--current:hover {
   color: #2c2c2b;
 }
-.main-menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  padding-left: 44px;
-
-  list-style: none;
-}
 
 /* slider */
 
@@ -390,13 +287,6 @@ a {
   font-family: "Vani", "Times New Roman", serif;
   text-transform: uppercase;
 }
-.slider {
-  margin-top: -75px;
-
-  background-color: #acacac;
-  background-image: radial-gradient( circle, rgb(171,171,171) 0%, rgb(155,155,155) 100%);
-}
-
 
 .slider__text {
   letter-spacing: 6.5px;
@@ -436,35 +326,6 @@ a {
   border-top: none;
   border-right: none;
   transform: rotate(45deg);
-}
-.slider__btn--back {
-  left: -320px;
-}
-.slider__btn--front {
-  right: -320px;
-
-  transform: rotate(180deg);
-}
-.slider__btn-round:focus,
-.slider__btn-round:hover {
-  background-color: #985336;
-}
-.slider__btn-round:focus::before,
-.slider__btn-round:hover::before {
-  border-color: #ffffff;
-}
-.slider__btn-round:active {
-  opacity: 0.7;
-}
-.slider__btn-round:active::before {
-  opacity: 0.7;
-}
-.slider__input:focus + .slider__btn-round {
-  background-color: #985336;
-  outline: auto;
-}
-.slider__input:focus + .slider__btn-round::before {
-  border-color: white;
 }
 
 .slider__btn--back {
@@ -526,6 +387,7 @@ a {
 
   border: 2px solid #985336;
 }
+
 .slider__btn:focus,
 .slider__btn:hover {
   background-color: #985336;
@@ -546,58 +408,6 @@ a {
   color: #212121;
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding-bottom: 20px;
-}
-.section-img {
-  position: relative;
-
-  width: 68px;
-  height: 18px;
-  margin: 0 auto;
-
-  background-image: url("../img/mustach.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.section-img::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -120px;
-
-  width: 90px;
-  height: 1px;
-
-  background-color: #985336;
-}
-.section-img::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -120px;
-
-  width: 90px;
-  height: 1px;
-
-  background-color: #985336;
-}
-.about__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-.about__item {
-  box-sizing: border-box;
-  width: 360px;
-  padding: 28px;
-
-  background-color: #f0f0f0;
-  border: 1px solid #d5d3d3;
 }
 
 .section-title--white {
@@ -720,32 +530,10 @@ a {
   text-align: center;
   color: #212121;
   letter-spacing: 1px;
-
 }
-.about__title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: calc(50% - (97px / 2));
 
-  width: 97px;
-  height: 2px;
 
-  background-color: #985336;
-}
-.about__text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
-  color: #3d3d3d;
-}
-.about__description {
-  width: 554px;
-  margin: 0 auto;
-padding-bottom: 100px;
 
-}
 .about__title::after {
   content: "";
   position: absolute;
@@ -756,7 +544,6 @@ padding-bottom: 100px;
   height: 2px;
 
   background-color: #985336;
-
 }
 
 .about__text {
@@ -779,26 +566,7 @@ padding-bottom: 100px;
   color: #995437;
   letter-spacing: 2px;
 }
-.section-title--white {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1px;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  letter-spacing: 3.6px;
-}
-.appointment {
-  padding-top: 91px;
-}
-.bgimage {
-  width: 69px;
-  height: 18px;
-  margin-right: auto;
-  margin-left: auto;
 
-  background-image: url("../img/mustach.png");
-}
 .statistics__text {
   margin-top: 10px;
 
@@ -820,51 +588,20 @@ padding-bottom: 100px;
   color: #212121;
   letter-spacing: 1px;
 }
-.appointment {
-  background-color: black;
-}
+
 
 .appointment__description {
-  text-align: center;
-  color: #808080;
+  color: #ffffff;
 }
-.page-header__info-item {
-  position: relative;
-}
-.page-header__info-item::before {
-  content: "";
-  position: absolute;
-  top: 13px;
-  left: 6px;
 
-  display: block;
-  width: 19px;
-  height: 19px;
-
-  background-image: url("../img/phone.png");
-  background-repeat: no-repeat;
-}
-.page-header__info-item:nth-of-type(2)::before {
-  top: 13px;
-  left: 12px;
-
-  width: 14px;
-  height: 21px;
-
-  background-image: url("../img/map.png");
-}
-.page-header__info-item:nth-of-type(3)::before {
-  top: 29px;
-  left: 6px;
-}
 .barbers__name {
   font-weight: bold;
   font-size: 24px;
   line-height: 1.5;
   font-family: "Vani", "Times New Roman", serif;
+  text-align: center;
   color: #0b0b0b;
   letter-spacing: 1px;
-  text-align: center;
 }
 
 .barbers__text {
@@ -872,15 +609,17 @@ padding-bottom: 100px;
 }
 
 .barbers__stars {
-  list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
-  display: flex;
+
+  list-style: none;
 }
 
 .barbers__star {
   width: 17px;
   height: 17px;
+
   background-image: url("../img/star-fill.png");
 }
 
@@ -912,7 +651,7 @@ padding-bottom: 100px;
 
   background-color: #000000;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-  url("../img/bg-2.jpg");
+    url("../img/bg-2.jpg");
 }
 
 .statistics__list {
@@ -940,9 +679,10 @@ padding-bottom: 100px;
 .services {
   padding-top: 113px;
   padding-bottom: 318px;
+
   background-image: url("../img/man.png"), linear-gradient(to top, transparent, white 64%), url("../img/bg-3.jpg");
-  background-position: center 391px;
   background-repeat: no-repeat;
+  background-position: center 391px;
 }
 
 .services__heading {
@@ -1022,40 +762,153 @@ padding-bottom: 100px;
 
 .appointment {
   padding-top: 1px;
-
+padding: 50px;
+box-sizing: border-box;
   background-color: #000000;
 }
 
 .appointment__form {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .appointment__column {
-  width: 50%;
+  width: 48%;
 }
 
+.appointment__textfield {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
 
+  color: white;
 
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.appointment__select {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 11px;
+
+  color: white;
+
+  background-color: transparent;
+  border: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.appointment__select option {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.appointment__select-wrapper {
+  position: relative;
+}
+
+.appointment__select-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: #c1c1c1;
+}
 
 .appointment__datefield {
   box-sizing: border-box;
   width: 100%;
+  padding: 7px 10px;
+
+  color: white;
+
+  background-color: transparent;
+  border: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.appointment__select-wrapper--date::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 0;
+
+  width: 50px;
+  height: 90%;
+
+  background-color: black;
+
+  pointer-events: none;
 }
 
 .appointment__message {
+  box-sizing: border-box;
   width: 100%;
+  padding: 10px;
+
+  color: white;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #c1c1c1;
+
   resize: none;
 }
 
-.barbers__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.appointment__btn {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 35px;
+  padding: 15px 20px;
 
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.5;
+  font-family: "Quattrocento Sans", "Arial", sans-serif;
+  color: #ffffff;
+  text-transform: capitalize;
+  letter-spacing: 0.025em;
+
+  background-color: #995437;
+  border: 2.0px solid #6e331a;
+}
+.appointment__btn--reset{
+  background-color: transparent;
+border: none;
+color:#995437;
+text-decoration: underline;
+cursor: pointer;
+font-size: 20px;
+margin-top: 20px;
+
+}
+.appointment__btn-wrapper{
+  width: 100%;
+}
+.barbers__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .barbers__item {
@@ -1068,12 +921,71 @@ padding-bottom: 100px;
   width: 1920px;
   margin: 0 auto;
 }
+.modal__close-btn{
+  position: absolute;
+  top: 35px;
+  right:60px;
+background-color: transparent;
+border: 2px solid #995437;
+border-radius: 50%;
+width: 50px;
+height: 50px;
+transform: rotate(45deg);
+}
+.modal__close-btn::before{
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 20px;
+  background-color: #995437;
+  top: 12px;
+  left: 22px;
+}
+.modal__close-btn::after{
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #995437;
+  top: 21px;
+  left: 13px;
+}
 .modal {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: calc(50% - 455px);  
+  left: calc(50% - 640px);
   z-index: 100;
+  padding: 40px 70px;
+  box-sizing: border-box;
+  box-shadow: 0 0 50px -10px black;
+  animation: modalShow 0.4s  linear;
 }
+
 .modal--hide {
   display: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px #000000 !important; /* Цвет фона */
+    -webkit-text-fill-color: #999 !important; /* цвет текста */
+}
+@keyframes modalShow {
+  0%{
+   left: -1000px;
+  }
+  25%{
+    left: calc(50% - 680px);
+   }
+   50%{
+    left: calc(50% - 620px);
+   }
+   75%{
+    left: calc(50% - 660px);
+   }
+   
+   
+  100%{
+   left: calc(50% - 640px);
+  }
+  
 }

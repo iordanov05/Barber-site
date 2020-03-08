@@ -90,7 +90,7 @@
           <p class="slider__slogan">
             <span class="slider__text slider__text--white">welcome to the</span>
             <span class="slider__text slider__text--brown">barbershop</span>
-            <a class="slider__btn slider__btn--rect" href="#">Make An Appointment</a>
+            <a class="slider__btn slider__btn--rect slider__btn--modalShow" href="#">Make An Appointment</a>
           </p>
           <img class="slider__img" src="img/bg-1.jpg" alt="slider_1" width="1831" height="986">
         </li>
@@ -468,51 +468,61 @@
       </ul>
     </div>
   </footer>
+
+
   <section class="appointment modal modal--hide">
+    <button type="button" class="modal__close-btn"></button>
     <div class="container">
       <h2 class="section-title section-title--white">Make An Appointment</h2>
+
       <div class="section-img"></div>
+
       <p class="appointment__description section-description">Sed ut perspiciatis unde omnis iste natus error sit
         voluptatem
         accusantium doloremque laudantium, totam rem aperiam</p>
+
       <form class="appointment__form" action="#" method="get">
         <div class="appointment__column">
-          <input class="appointment__textfield" type="text" name="name" id="nameField" placeholder="Name" required>
+          <input class="appointment__textfield" type="text" name="name" id="nameField" placeholder="Name" required
+            autocomplete="off">
           <input class="appointment__textfield" type="email" name="email" placeholder="Email" pattern="[^ @]*@[^ @]*"
-            id="email" required>
+            id="email" required autocomplete="off">
           <input class="appointment__textfield" type="tel" name="phone" id="phone" placeholder="Phone"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            pattern="+[0-9]-[0-9]{3}-[0-9]{7}" required autocomplete="off">
         </div>
+
         <div class="appointment__column">
-          <div class="appointment__select-wraper">
+
+          <div class="appointment__select-wrapper">
             <select class="appointment__select" name="services" id="services" required>
-              <option value disabled selected>Services</option>
-              <option value="hair cut">hair cut</option>
-              <option value="hair wash">hair wash</option>
-              <option value="hair styling">hair styling</option>
+              <option value="hair-cut">hair cut</option>
+              <option value="hair-wash">hair wash</option>
+              <option value="hair-styling">hair styling</option>
               <option value="shaving">shaving</option>
             </select>
           </div>
-          <div class="appointment__select-wraper">
+
+          <div class="appointment__select-wrapper">
             <select class="appointment__select" name="barber" id="barber" required>
-              <option value disabled selected>Barbers</option>
               <option value="Darrell Gibbs">Darrell Gibbs</option>
               <option value="David Clarke">David Clarke</option>
               <option value="Richard Owens">Richard Owens</option>
             </select>
           </div>
 
-          <div class="appointment__select-wraper appointment__select-wraper--date">
-            <input class="appointment__datefield" type="date" name="date" id="date" required>
+          <div class="appointment__select-wrapper appointment__select-wrapper--date">
+            <input class="appointment__datefield" type="date" name="date" id="date" required autocomplete="off">
           </div>
-
         </div>
         <textarea class="appointment__message" name="message" id="message" cols="30" rows="10"
           placeholder="Message"></textarea>
         <button class="appointment__btn" type="submit">Make An Appointment</button>
+        <div class="appointment__btn-wrapper"><button class="appointment__btn appointment__btn--reset"
+            type="reset">Clear form</button></div>
       </form>
     </div>
   </section>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
