@@ -225,6 +225,8 @@ a {
   color: #e8e6e6;
   text-transform: uppercase;
   letter-spacing: 1px;
+
+  transition: all 0.3s;
 }
 
 .main-menu__link:hover {
@@ -370,7 +372,6 @@ a {
   border-color: #ffffff;
 }
 
-
 .slider__btn {
   display: inline-block;
   box-sizing: border-box;
@@ -386,16 +387,20 @@ a {
   letter-spacing: 0.025em;
 
   border: 2px solid #985336;
+
+  transition: all 0.3s;
 }
 
 .slider__btn:focus,
 .slider__btn:hover {
   background-color: #985336;
+  transform: scale(1.2);
 }
 
 .slider__btn:active {
   opacity: 0.7;
 }
+
 
 .section-title {
   margin-bottom: 0;
