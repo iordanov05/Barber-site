@@ -607,10 +607,14 @@ a {
   text-align: center;
   color: #0b0b0b;
   letter-spacing: 1px;
+  margin-top: 21px;
 }
 
 .barbers__text {
   text-align: center;
+  padding: 0 15px;
+line-height: 1.5;
+  letter-spacing:0.5px;
 }
 
 .barbers__stars {
@@ -628,17 +632,43 @@ a {
   background-image: url("../img/star-fill.png");
 }
 
-
+.reviews{
+  background-color: #000000;
+  padding-top: 135px;
+  padding-bottom:121px ;
+  background-image: linear-gradient(rgba(0,0,0,0.85)), url("../img/bg-3.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100%;
+}
 .reviews .section-title {
   color: #ffffff;
+  margin-top: 0;
+  letter-spacing: 3.4px;
+
+}
+.reviews__list{
+  padding: 0 160px;
+  margin: 0;
+  list-style: none;
 }
 
 .reviews__description {
   color: #ffffff;
+  margin-bottom: 39px;
 }
 
 .reviews__text {
   color: #ffffff;
+  text-align: center;
+  margin-top: 40px;
+  letter-spacing: 0.5px;
+}
+.reviews__photo {
+margin: 0 auto;
+display: block;
+margin-top: 51px;
+margin-bottom: 26px;
 }
 
 .reviews__name {
@@ -826,6 +856,7 @@ box-sizing: border-box;
   background-color: #c1c1c1;
 }
 
+
 .appointment__datefield {
   box-sizing: border-box;
   width: 100%;
@@ -918,13 +949,79 @@ box-sizing: border-box;
 .barbers__item {
   width: 360px;
 }
+.gallery{
+  padding-top: 113px;
 
+}
+.gallery__title{
+  letter-spacing: 3.6px;
+}
+.gallery__description{
+  margin-bottom: 49px;
+}
 .gallery__wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 1920px;
+  width: 1835px;
   margin: 0 auto;
 }
+.pricing{
+  background-color: #efefef;
+  padding-top: 140px;
+}
+.pricing__title{
+  margin: 0;
+}
+.pricing__list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.pricing__table{
+  width: 360px;
+  border-collapse: collapse;
+  border: 1px solid #c6c6c6;
+}
+.pricing__table thead{
+  background-color: black;
+}
+.pricing__table thead th{
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.025cm;
+}
+.pricing__table tbody {
+display: block;
+box-sizing: border-box;
+background-color: #ffff;
+padding: 20px 0;
+
+}
+
+.pricing__table tbody td{
+  background-color: #ffff;
+padding: 10px 20px;
+}
+.pricing__table tbody td :first-of-type{
+  text-align: left;
+}
+.pricing__table tbody td :last-of-type{
+  text-align: right;
+}
+
+.pricing__item{
+  margin-right: 30px;
+
+}
+
 .modal__close-btn::after {
   content: "";
   position: absolute;
