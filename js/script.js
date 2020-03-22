@@ -1,3 +1,4 @@
+
 var modalOpenButton = document.querySelector('.slider__btn--modalShow');
 
 var modal = document.querySelector('.modal');

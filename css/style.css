@@ -225,6 +225,8 @@ a {
   color: #e8e6e6;
   text-transform: uppercase;
   letter-spacing: 1px;
+
+  transition: all 0.3s;
 }
 
 .main-menu__link:hover {
@@ -370,7 +372,6 @@ a {
   border-color: #ffffff;
 }
 
-
 .slider__btn {
   display: inline-block;
   box-sizing: border-box;
@@ -386,16 +387,20 @@ a {
   letter-spacing: 0.025em;
 
   border: 2px solid #985336;
+
+  transition: all 0.3s;
 }
 
 .slider__btn:focus,
 .slider__btn:hover {
   background-color: #985336;
+  transform: scale(1.2);
 }
 
 .slider__btn:active {
   opacity: 0.7;
 }
+
 
 .section-title {
   margin-bottom: 0;
@@ -805,12 +810,6 @@ box-sizing: border-box;
   appearance: none;
 }
 
-.appointment__select option {
-  background-color: black;
-  color: white;
-  border: none;
-}
-
 .appointment__select-wrapper {
   position: relative;
 }
@@ -887,20 +886,25 @@ box-sizing: border-box;
 
   background-color: #995437;
   border: 2.0px solid #6e331a;
+  cursor: pointer;
 }
-.appointment__btn--reset{
-  background-color: transparent;
-border: none;
-color:#995437;
-text-decoration: underline;
-cursor: pointer;
-font-size: 20px;
-margin-top: 20px;
 
-}
-.appointment__btn-wrapper{
+.appointment__btn-wrapper {
   width: 100%;
 }
+
+.appointment__btn--reset {
+  margin-top: 20px;
+
+  font-size: 20px;
+  line-height: 1.5;
+  color: #995437;
+  text-decoration: underline;
+
+  background-color: transparent;
+  border: none;
+}
+
 .barbers__list {
   display: flex;
   flex-wrap: wrap;
@@ -921,71 +925,45 @@ margin-top: 20px;
   width: 1920px;
   margin: 0 auto;
 }
-.modal__close-btn{
-  position: absolute;
-  top: 35px;
-  right:60px;
-background-color: transparent;
-border: 2px solid #995437;
-border-radius: 50%;
-width: 50px;
-height: 50px;
-transform: rotate(45deg);
-}
-.modal__close-btn::before{
-  position: absolute;
+.modal__close-btn::after {
   content: "";
-  width: 2px;
-  height: 20px;
-  background-color: #995437;
-  top: 12px;
-  left: 22px;
-}
-.modal__close-btn::after{
   position: absolute;
-  content: "";
-  width: 20px;
-  height: 2px;
-  background-color: #995437;
   top: 21px;
   left: 13px;
+
+  width: 20px;
+  height: 2px;
+
+  background-color: #995437;
 }
-.modal {
-  position: fixed;
-  top: calc(50% - 455px);  
-  left: calc(50% - 640px);
-  z-index: 100;
-  padding: 40px 70px;
-  box-sizing: border-box;
-  box-shadow: 0 0 50px -10px black;
-  animation: modalShow 0.4s  linear;
-}
+
 
 .modal--hide {
   display: none;
 }
 
 input:-webkit-autofill {
-    -webkit-box-shadow: inset 0 0 0 50px #000000 !important; /* Цвет фона */
-    -webkit-text-fill-color: #999 !important; /* цвет текста */
+  -webkit-box-shadow: inset 0 0 0 50px #000000 !important;
+  -webkit-text-fill-color: #999999 !important;
 }
+
 @keyframes modalShow {
-  0%{
-   left: -1000px;
+  0% {
+    left: -1000px;
   }
-  25%{
+
+  25% {
     left: calc(50% - 680px);
-   }
-   50%{
-    left: calc(50% - 620px);
-   }
-   75%{
-    left: calc(50% - 660px);
-   }
-   
-   
-  100%{
-   left: calc(50% - 640px);
   }
-  
+  50% {
+    left: calc(50% - 620px);
+  }
+
+  75% {
+    left: calc(50% - 660px);
+  }
+
+  100% {
+    left: calc(50% - 640px);
+  }
 }
