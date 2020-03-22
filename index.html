@@ -190,7 +190,7 @@
 
     <section class="barbers">
       <div class="container">
-        <h2 class="section-title">Our Barbers</h2>
+        <h2 class="section-title barbers__title">Our Barbers</h2>
         <div class="section-img"></div>
         <p class="section-description barbers__description">Sed ut perspiciatis unde omnis iste natus error sit
           voluptatem
@@ -242,40 +242,45 @@
       <div class="container">
         <h2 class="section-title section-title--white">Our Clients Say</h2>
         <div class="section-img"></div>
-        <p class="reviews__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        <p class="section-description reviews__description">Sed ut perspiciatis unde omnis iste natus error sit
+          voluptatem
           accusantium doloremque laudantium, totam rem aperiam</p>
-        <label class="reviews__btn reviews__btn--back">
-          <input class="reviews__input" type="radio" name="slider-control">Back
-        </label>
-        <label class="reviews__btn reviews__btn--front">
-          <input class="reviews__input" type="radio" name="slider-control">Front
-        </label>
-        <ul class="reviews__list">
-          <li class="reviews__item">
-            <ul class="barbers__stars">
-              <li class="barbers__star"></li>
-              <li class="barbers__star"></li>
-              <li class="barbers__star"></li>
-              <li class="barbers__star"></li>
-              <li class="barbers__star"></li>
-            </ul>
-            <p class="reviews__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-              doloremque
-              laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-              beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-              aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,</p>
-            <img class="reviews__photo" src="img/client.png" alt="user-photo" width="105" height="105">
-            <p class="reviews__name">George Morgan</p>
-          </li>
-        </ul>
+        <div class="reviews__wrapper">
+          <input class="slider__input visually-hidden" type="radio" name="slider-control" id="sliderB">
+          <label class="reviews__btn reviews__btn--back slider__btn-round slider__btn--back" for="sliderB"></label>
+
+          <input class="slider__input visually-hidden" type="radio" name="slider-control" id="sliderF">
+          <label class="reviews__btn reviews__btn--front slider__btn-round slider__btn--front" for="sliderF"></label>
+
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <ul class="barbers__stars">
+                <li class="barbers__star"></li>
+                <li class="barbers__star"></li>
+                <li class="barbers__star"></li>
+                <li class="barbers__star"></li>
+                <li class="barbers__star"></li>
+              </ul>
+              <p class="reviews__text">Sed ut&#160;perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque I<br />
+                laudantium, totam rem aperiam, eaque ipsa quae ab&#160;illo inventore veritatis et&#160;quasi
+                architecto<br />
+                beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur<br />
+                aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.<br />
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,</p>
+              <img class="reviews__photo" src="img/client.png" alt="user-photo" width="105" height="105">
+              <p class="reviews__name">George Morgan</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="gallery">
       <div class="container">
-        <h2 class="section-title">Our Gallery</h2>
+        <h2 class="gallery__title section-title">Our Gallery</h2>
         <div class="section-img"></div>
-        <p class="gallery__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        <p class="section-description gallery__description">Sed ut perspiciatis unde omnis iste natus error sit
+          voluptatem
           accusantium doloremque laudantium, totam rem aperiam</p>
       </div>
       <div class="gallery__wrapper">
@@ -294,18 +299,20 @@
     </section>
     <section class="pricing">
       <div class="container">
-        <h2 class="section-title">Our Pricing</h2>
+        <h2 class="pricing__title section-title">Our Pricing</h2>
         <div class="section-img"></div>
-        <p class="pricing__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        <p class="section-description pricing__description">Sed ut perspiciatis unde omnis iste natus error sit
+          voluptatem
           accusantium doloremque laudantium, totam rem aperiam</p>
         <ul class="pricing__list">
           <li class="pricing__item">
             <table class="pricing__table">
               <thead>
                 <tr>
-                  <th colspan="2">man</td>
+                  <th colspan="2">man</th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr>
                   <td>Hair cut</td>
@@ -343,7 +350,7 @@
             <table class="pricing__table">
               <thead>
                 <tr>
-                  <th colspan="2">woman</td>
+                  <th colspan="2">woman</th>
                 </tr>
               </thead>
               <tbody>
@@ -384,117 +391,119 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__top">
-      <div class="page-footer__column">
-        <h3 class="page-footer__title">Subscribe</h3>
-        <p class="page-footer__text">At vero eos et accusamus et
-          iusto odio dignissimos
-          ducimus qui blanditiis.</p>
-        <form class="page-footer__form" action="#" method="get">
-          <input class="page-footer__field" type="email" name="subscribeEmail" id="subscribeEmail"
-            pattern="[^ @]*@[^ @]*" placeholder="Your E-mail">
-          <button class="page-footer__btn" type="button">Subscribe</button>
-        </form>
+    <div class="container">
+      <div class="page-footer__top">
+        <div class="page-footer__column">
+          <h3 class="page-footer__title">Subscribe</h3>
+          <p class="page-footer__text">At vero eos et accusamus et
+            iusto odio dignissimos
+            ducimus qui blanditiis.</p>
+          <form class="page-footer__form" action="#" method="get">
+            <input class="page-footer__field" type="email" name="subscribeEmail" id="subscribeEmail"
+              pattern="[^ @]*@[^ @]*" placeholder="Your E-mail">
+            <button class="page-footer__btn" type="button" aria-label="Subscribe"></button>
+          </form>
+        </div>
+        <div class="page-footer__column">
+          <h3 class="page-footer__title">Working hours</h3>
+          <table class="page-footer__table">
+            <tr>
+              <td>mon</td>
+              <td>9.00 - 18.00</td>
+            </tr>
+            <tr>
+              <td>tue</td>
+              <td>9.00 - 18.00</td>
+            </tr>
+            <tr>
+              <td>wed</td>
+              <td>9.00 - 18.00</td>
+            </tr>
+            <tr>
+              <td>thu</td>
+              <td>9.00 - 18.00</td>
+            </tr>
+            <tr>
+              <td>fri</td>
+              <td>9.00 - 16.00</td>
+            </tr>
+            <tr>
+              <td>sat</td>
+              <td>10.00 - 14.00</td>
+            </tr>
+            <tr>
+              <td>sun</td>
+              <td>Output</td>
+            </tr>
+          </table>
+        </div>
+        <div class="page-footer__column">
+          <h3 class="page-footer__title">latest from blog</h3>
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <h4 class="page-footer__blog-title">Lorem ipsum dolor</h4>
+              <p class="page-footer__blog-text">Sed ut perspiciatis unde omnis iste
+                natus error sit voluptatem
+                accusantium doloremque
+                laudantium...</p>
+            </li>
+            <li class="page-footer__item">
+              <h4 class="page-footer__blog-title">Lorem ipsum dolor</h4>
+              <p class="page-footer__blog-text">Sed ut perspiciatis unde omnis iste
+                natus error sit voluptatem
+                accusantium doloremque...</p>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__column">
+          <h3 class="page-footer__title">instagram</h3>
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <img class="page-footer__img" width="67" height="67" src="img/insta_1.jpg" alt="instagrma photo">
+            </li>
+            <li class="page-footer__item">
+              <img class="page-footer__img" width="67" height="67" src="img/insta_2.jpg" alt="instagrma photo">
+            </li>
+            <li class="page-footer__item">
+              <img class="page-footer__img" width="67" height="67" src="img/insta_3.jpg" alt="instagrma photo">
+            </li>
+            <li class="page-footer__item">
+              <img class="page-footer__img" width="67" height="67" src="img/insta_4.jpg" alt="instagrma photo">
+            </li>
+            <li class="page-footer__item">
+              <img class="page-footer__img" width="67" height="67" src="img/insta_5.jpg" alt="instagrma photo">
+            </li>
+            <li class="page-footer__item">
+              <img class="page-footer__img" width="67" height="67" src="img/insta_6.jpg" alt="instagrma photo">
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="page-footer__column">
-        <h3 class="page-footer__title">Working hours</h3>
-        <table class="page-footer__table">
-          <tr>
-            <td>mon</td>
-            <td>9.00 - 18.00</td>
-          </tr>
-          <tr>
-            <td>tue</td>
-            <td>9.00 - 18.00</td>
-          </tr>
-          <tr>
-            <td>wed</td>
-            <td>9.00 - 18.00</td>
-          </tr>
-          <tr>
-            <td>thu</td>
-            <td>9.00 - 18.00</td>
-          </tr>
-          <tr>
-            <td>fri</td>
-            <td>9.00 - 16.00</td>
-          </tr>
-          <tr>
-            <td>sat</td>
-            <td>10.00 - 14.00</td>
-          </tr>
-          <tr>
-            <td>sun</td>
-            <td>Output</td>
-          </tr>
-        </table>
-      </div>
-      <div class="page-footer__column">
-        <h3 class="page-footer__title">latest from blog</h3>
-        <ul class="page-footer__list">
-          <li class="page-footer__item">
-            <h4 class="page-footer__blog-title">Lorem ipsum dolor</h4>
-            <p class="page-footer__blog-text">Sed ut perspiciatis unde omnis iste
-              natus error sit voluptatem
-              accusantium doloremque
-              laudantium...</p>
+      <div class="page-footer__bottom">
+        <p class="page-footer__copy">Copyright &copy; 2017 Barber. All rights reserved</p>
+        <ul class="page-footer__social-list">
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link page-footer__social-link--youtube" href="#">
+              youtube
+            </a>
           </li>
-          <li class="page-footer__item">
-            <h4 class="page-footer__blog-title">Lorem ipsum dolor</h4>
-            <p class="page-footer__blog-text">Sed ut perspiciatis unde omnis iste
-              natus error sit voluptatem
-              accusantium doloremque...</p>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link page-footer__social-link--twitter" href="#">
+              twitter
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link page-footer__social-link--instagram" href="#">
+              instagram
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link page-footer__social-link--facebook" href="#">
+              facebook
+            </a>
           </li>
         </ul>
       </div>
-      <div class="page-footer__column">
-        <h3 class="page-footer__title">instagram</h3>
-        <ul class="page-footer__list">
-          <li class="page-footer__item">
-            <img class="page-footer__img" width="67" height="67" src="img/insta_1.jpg" alt="instagrma photo">
-          </li>
-          <li class="page-footer__item">
-            <img class="page-footer__img" width="67" height="67" src="img/insta_2.jpg" alt="instagrma photo">
-          </li>
-          <li class="page-footer__item">
-            <img class="page-footer__img" width="67" height="67" src="img/insta_3.jpg" alt="instagrma photo">
-          </li>
-          <li class="page-footer__item">
-            <img class="page-footer__img" width="67" height="67" src="img/insta_4.jpg" alt="instagrma photo">
-          </li>
-          <li class="page-footer__item">
-            <img class="page-footer__img" width="67" height="67" src="img/insta_5.jpg" alt="instagrma photo">
-          </li>
-          <li class="page-footer__item">
-            <img class="page-footer__img" width="67" height="67" src="img/insta_6.jpg" alt="instagrma photo">
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="page-footer__bottom">
-      <p class="page-footer__copy">Copyright &copy; 2017 Barber. All rights reserved</p>
-      <ul class="page-footer__social-list">
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-link page-footer__social-link--youtube" href="#">
-            youtube
-          </a>
-        </li>
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-link page-footer__social-link--twitter" href="#">
-            twitter
-          </a>
-        </li>
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-link page-footer__social-link--instagram" href="#">
-            instagram
-          </a>
-        </li>
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-link page-footer__social-link--facebook" href="#">
-            facebook
-          </a>
-        </li>
-      </ul>
     </div>
   </footer>
 
